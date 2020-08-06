@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XI RPL 1</title>
+  <link rel="icon" href="image/logo/Logo.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="font-awesome/css/all.css">
+</head>
+
+<body onscroll="scroll()">
+
+  <div onclick="btnUp()" id="scroll-to-top" data-show="false">
+    <i data-feather="arrow-up"></i>
+  </div>
+
+  <header>
+
+    <div id="logo">
+      <img src="image/logo/Logo.png" alt="Logo">
+    </div>
+
+    <div id="center">
+      <h1>XI RPL 1</h1>
+
+      <nav id="nav" class="navbar">
+        <div class="menu-toggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <ul id="menu">
+          <li><a href="#profile-kelas" class="m-10">Profile</a>
+            <ul>
+              <li><a href="#wali-kelas">Wali Kelas</a></li>
+              <li><a href="#guru-kelas">Guru Kelas</a></li>
+              <li><a href="#siswa-kelas">Siswa</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#event-sekolah" class="m-10">Event</a>
+            <ul>
+              <li><a href="#event-sekolah">Kelas</a></li>
+              <li><a href="#event-sekolah">Sekolah</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#jadwal-sekolah" class="m-10">Jadwal</a>
+            <ul>
+              <li><a href="#jadwal-sekolah">Kelas</a></li>
+              <li><a href="#jadwal-sekolah">Sekolah</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#footer">Support</a>
+          </li>
+        </ul>
+
+      </nav>
+    </div>
+    <!--tutup div center-->
+
+    <div id="tema" onclick="this.classList.toggle('active'),myFunction()" title="Dark Mode">
+      <div class="toggle"></div>
+    </div>
+
+  </header>
+
+  <main>
+
+    <div id="content">
+
+      <article id="profile-kelas">
+
+        <figure class="effect-ruby">
+          <img src="image/profileKelas.JPG" alt="profile Kelas" />
+          <figcaption>
+            <h2>kelas <span>RPL</span></h2>
+            <p>acara HUT-PGRI smk telkom medan</p>
+          </figcaption>
+        </figure>
+
+        <section class="judul">
+          <h1>Profile Kelas</h1>
+          <p>Jurusan Rekayasa Perangkat Lunak(RPL) adalah salah satu jurusan di SMK Telkom Medan.</p>
+          <p>Foto disamping adalah foto bersama wali kelas dalam rangka peringatan HUT-PGRI di SMK TELKOM MEDAN</p>
+        </section>
+
+      </article>
+
+      <article id="wali-kelas">
+        <section class="title-walkel">
+          <h1>Wali Kelas</h1>
+        </section>
+        <figure class="card-walkel">
+          <img src="image/wali-kelas.jpg" alt="Wali-Kelas">
+          <figcaption>
+            <h2>Rina <span>Yugo</span></h2>
+            <p>Kewirausahaan Perangkat Lunak</p>
+            <button class="modal-open" data-modal="modal1">View More</button>
+
+            <div class="modal" id="modal1">
+
+              <div class="modal-content">
+                <div class="modal-header">
+                  <span class="modal-close">&times;</span>
+                </div>
+                <div class="column-card">
+                  <img src="image/wali-kelas.jpg" alt="wali-kelas">
+                  <article class="modal-title">
+                    <h3>Rina Yugo</h3>
+                    <h5>Kewirausahaan Perangkat Lunak</h5>
+                  </article>
+                </div>
+
+              </div>
+
+            </div>
+
+          </figcaption>
+        </figure>
+      </article>
+      <!-- penutup article id=wali-kelas -->
+
+      <article id="guru-kelas">
+        <h1>Guru Kelas</h1>
+
+        <div class="column-row">
+
+          <div class="card-kelas">
+            <img src="image/guru-kelas.png" alt="guru">
+
+            <article class='title-kelas'>
+              <h3>Jamaluddin</h3>
+              <h3>Pemograman Dekstop</h3>
+              <button class="modal-open" data-modal="modal2">View More</button>
+
+              <div class="modal" id="modal2">
+
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <span class="modal-close">&times;</span>
+                  </div>
+                  <div class="column-card">
+                    <img src="image/guru-kelas.png" alt="guru-kelas">
+                    <div class="modal-title">
+                      <h3>Jamaluddin</h3>
+                      <h5>Pemograman Dekstop</h5>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </article>
+          </div>
+
+          <div class="card-kelas">
+            <img src="image/guru-kelas.png" alt="guru">
+
+            <article class='title-kelas'>
+              <h3>M. Reza Alvi</h3>
+              <h3>Pemograman Web</h3>
+              <button class="modal-open" data-modal="modal3">View More</button>
+
+              <div class="modal" id="modal3">
+
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <span class="modal-close">&times;</span>
+                  </div>
+                  <div class="column-card">
+                    <img src="image/guru-kelas.png" alt="guru-kelas">
+                    <div class="modal-title">
+                      <h3>M. Reza Alvi</h3>
+                      <h5>Pemograman Web</h5>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </article>
+          </div>
+
+        </div>
+        <!-- tutup column-guru  -->
+
+        <div class="column-row">
+
+          <div class="card-kelas">
+            <img src="image/guru-kelas.png" alt="guru">
+
+            <article class='title-kelas'>
+              <h3>Erick Fitra</h3>
+              <h3>Kewirausahaan RPL</h3>
+              <button class="modal-open" data-modal="modal4">View More</button>
+
+              <div class="modal" id="modal4">
+
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <span class="modal-close">&times;</span>
+                  </div>
+                  <div class="column-card">
+                    <img src="image/guru-kelas.png" alt="guru-kelas">
+                    <div class="modal-title">
+                      <h3>Erick Fitra</h3>
+                      <h5>Kewirausahaan RPL</h5>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </article>
+          </div>
+
+          <div class="card-kelas">
+            <img src="image/guru-kelas.png" alt="guru">
+
+            <article class='title-kelas'>
+              <h3>Nova Irwan</h3>
+              <h3>Office RPL</h3>
+              <button class="modal-open" data-modal="modal5">View More</button>
+
+              <div class="modal" id="modal5">
+
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <span class="modal-close">&times;</span>
+                  </div>
+                  <div class="column-card">
+                    <img src="image/guru-kelas.png" alt="guru-kelas">
+                    <div class="modal-title">
+                      <h3>Nova Irwan</h3>
+                      <h5>Office RPL</h5>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </article>
+          </div>
+
+        </div>
+        <!-- tutup column-guru  -->
+
+      </article>
+      <!-- tutup article guru-kelas -->
+
+      <article id="siswa-kelas">
+        <h1>Data Siswa</h1>
+
+        <div class="column-row">
+
+          <div class="card-kelas">
+            <img src="image/guru-kelas.png" alt="guru">
+
+            <article class='title-kelas'>
+              <h3>Muhammad Zaki</h3>
+              <h3>185886</h3>
+              <button class="modal-open" data-modal="modal6">View More</button>
+
+              <div class="modal" id="modal6">
+
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <span class="modal-close">&times;</span>
+                  </div>
+                  <div class="column-card">
+                    <img src="image/guru-kelas.png" alt="guru-kelas">
+                    <div class="modal-title">
+                      <h3>Muhammad Zaki</h3>
+                      <h5>185886</h5>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </article>
+          </div>
+
+          <div class="card-kelas">
+            <img src="image/guru-kelas.png" alt="guru">
+
+            <article class='title-kelas'>
+              <h3>Chintya Tio</h3>
+              <h3>185845</h3>
+              <button class="modal-open" data-modal="modal7">View More</button>
+
+              <div class="modal" id="modal7">
+
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <span class="modal-close">&times;</span>
+                  </div>
+                  <div class="column-card">
+                    <img src="image/guru-kelas.png" alt="guru-kelas">
+                    <div class="modal-title">
+                      <h3>Chintya Tio</h3>
+                      <h5>185845</h5>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </article>
+          </div>
+
+        </div>
+        <!-- tutup column-guru  -->
+
+        <div class="column-row">
+
+          <div class="card-kelas">
+            <img src="image/guru-kelas.png" alt="guru">
+
+            <article class='title-kelas'>
+              <h3>Atqa Munzir</h3>
+              <h3>185848</h3>
+              <button class="modal-open" data-modal="modal8">View More</button>
+
+              <div class="modal" id="modal8">
+
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <span class="modal-close">&times;</span>
+                  </div>
+                  <div class="column-card">
+                    <img src="image/guru-kelas.png" alt="guru-kelas">
+                    <div class="modal-title">
+                      <h3>Atqa Munzir</h3>
+                      <h5>185848</h5>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </article>
+          </div>
+
+          <div class="card-kelas">
+            <img src="image/guru-kelas.png" alt="guru">
+
+            <article class='title-kelas'>
+              <h3>Muhammad Alif</h3>
+              <h3>185889</h3>
+              <button class="modal-open" data-modal="modal9">View More</button>
+
+              <div class="modal" id="modal9">
+
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <span class="modal-close">&times;</span>
+                  </div>
+                  <div class="column-card">
+                    <img src="image/guru-kelas.png" alt="guru-kelas">
+                    <div class="modal-title">
+                      <h3>Muhammad Alif</h3>
+                      <h5>185859</h5>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </article>
+          </div>
+
+        </div>
+        <!-- tutup column-guru  -->
+
+      </article>
+      <!-- tutup article siswa-kelas -->
+
+      <article id="event-sekolah">
+
+        <h1>Event</h1>
+
+        <div id="choose-event">
+          <p class="par active" onclick="filterSelection('all')">All</p>
+          <p class="par" onclick="filterSelection('sekolah')">Sekolah</p>
+          <p class="par" onclick="filterSelection('kelas')">Kelas</p>
+        </div>
+
+        <article class="container-event">
+          <div class="container-row">
+            <section class="column sekolah">
+              <div class="content">
+                <img src="image/event-sekolah.jpeg" alt="Mountains" style="width:100%">
+                <h4>RPL SMK Telkom Medan</h4>
+                <p>Foto bersama semua angkatan rpl</p>
+              </div>
+            </section>
+            <section class="column sekolah">
+              <div class="content">
+                <img src="image/event-sekolah1.JPG" alt="Lights" style="width:100%">
+                <h4>Girls RPL 1</h4>
+                <p>Foto bersama cewek xi rpl 1</p>
+              </div>
+            </section>
+            <section class="column sekolah">
+              <div class="content">
+                <img src="image/event-sekolah2.JPG" alt="Nature" style="width:100%">
+                <h4>XI RPL 1</h4>
+                <p>Foto bersama kelas xi rpl 1</p>
+              </div>
+            </section>
+          </div>
+
+          <div class="container-row">
+            <section class="column kelas">
+              <div class="content">
+                <img src="image/event-kelas1.jpeg" alt="Mountains" style="width:100%">
+                <h4>Mr.Jamal Birthday</h4>
+                <p>Acara merayakan ulang tahun mr. Jamal</p>
+              </div>
+            </section>
+            <section class="column kelas">
+              <div class="content">
+                <img src="image/event-kelas2.jpeg" alt="Lights" style="width:100%">
+                <h4>Lomba memasak</h4>
+                <p>Lomba memasak pada saat perayaan PGRI</p>
+              </div>
+            </section>
+            <section class="column kelas">
+              <div class="content">
+                <img src="image/event-kelas3.jpeg" alt="Nature" style="width:100%">
+                <h4>Mrs. Dwi Birthday</h4>
+                <p>Acara merayakan ulang tahun mrs. Dwi</p>
+              </div>
+            </section>
+          </div>
+
+        </article>
+        <!-- tutup container-event -->
+
+      </article>
+      <!-- tutup event-sekolah -->
+
+      <article id="jadwal-sekolah">
+
+        <h1>Jadwal</h1>
+
+        <div id="choose-jadwal">
+          <p class="par-jadwal active1">Sekolah</p>
+          <p class="par-jadwal">Kelas</p>
+        </div>
+
+        <div class="container-jadwal">
+
+          <img src="image/table-jadwal.png" alt="event">
+        </div>
+
+      </article>
+      <!-- tutup jadwal-sekolah -->
+    </div>
+    <!--Tutup content-->
+
+    <aside class='aside'>
+
+      <article class="about-me">
+
+        <img src="image/about-me.jpeg" alt="About Me">
+        <section class="title-about-me">
+          <h2>About Me</h2>
+          <p>Muhammad Zaki</p>
+        </section>
+
+        <div class="skill">
+
+          <article class="skill-title">
+            <p>HTML</p>
+            <section class="container">
+              <div class="skills html">90%</div>
+            </section>
+          </article>
+
+          <article class="skill-title">
+            <p>CSS</p>
+            <section class="container">
+              <div class="skills css">80%</div>
+            </section>
+          </article>
+
+          <article class="skill-title">
+            <p>JS</p>
+            <section class="container">
+              <div class="skills js">40%</div>
+            </section>
+          </article>
+
+          <article class="skill-title">
+            <p>PHP</p>
+            <section class="container">
+              <div class="skills php">30%</div>
+            </section>
+          </article>
+
+        </div>
+
+      </article>
+      <!-- tutup div about-me -->
+    </aside>
+  </main>
+
+  <!-- footer page -->
+  <footer id="footer">
+    <article class="footer-content">
+      <section class="footer-item">
+        <h3>Contact Me</h3>
+        <p>Wa : +6282386965086</p>
+        <p>fb : Muhammad Zaki</p>
+        <p>ig : _muhammadzaki</p>
+      </section>
+      <section class="footer-item">
+        <h3>Dicoding</h3>
+        <blockquote>
+          Visi dicoding adalah menjadi jaringan terbaik untuk developer muda indonesia. Dicoding memiliki
+          dua misi utama. Pertama adalah membantu developer untuk menjadi entrepeneur yang mampu mengembangkan
+          produk kelas dunia. Kedua adalah melahirkan talent digital sebanyak mungkin untuk industry IT di Indonesia
+        </blockquote>
+      </section>
+    </article>
+    <div class="footer-copyright">
+      <p>Copyright &#169; 2020-Muhammad Zaki</p>
+    </div>
+  </footer>
+
+  <!-- feather-icon script -->
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script>
+    feather.replace()
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="javascript/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: black;
+    }
+
+    #tema {
+      transform: translate(0, 0);
+      position: relative;
+      width: 90px;
+      height: 40px;
+      border: 2px solid white;
+      z-index: -2;
+      border-radius: 50px;
+    }
+
+    #tema input {
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      cursor: pointer;
+    }
+
+    span {
+      position: absolute;
+      top: 2.5px;
+      left: 2.5px;
+      width: 35px;
+      height: 35px;
+      z-index: -1;
+      border-radius: 50px;
+      transition: all .4s;
+      background-color: rgb(255, 255, 255);
+    }
+
+    #tema input:checked~span {
+      transform: translateX(145%) scale(1);
+      background-color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="tema">
+    <input type="checkbox" name="" id="">
+    <span></span>
+  </div>
+</body>
+
+</html>

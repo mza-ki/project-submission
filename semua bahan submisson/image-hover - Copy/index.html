@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel='stylesheet' href='style.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css">
+
+
+</head>
+
+<body>
+  <div class="container">
+    <h1>Dramatic Effect Sections</h1>
+    <p>Mouse over or tap on the section card to view effect.</p>
+    <div class="row">
+      <div class="col-12 col-sm-6 col-lg-3 section-card" id="section-1">
+        <div class="img-container" id="section-1-image">
+          <img src="https://images.pexels.com/photos/712521/pexels-photo-712521.jpeg" id="test-img" alt="" />
+        </div>
+        <h3>Default Behavior</h3>
+        <p>The default behavior consists of a slightly sepia image that grows while regaining all its color.</p>
+        <p><strong>Results may vary for Internet Explorer users because IE does not support CSS variables or
+            <code>clip-path</code></strong>.</p>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 section-card" id="section-2">
+        <div class="img-container">
+          <img src="https://images.pexels.com/photos/712521/pexels-photo-712521.jpeg" id="test-img" alt="" />
+        </div>
+        <h3>...with <code>clip-path</code></h3>
+        <p>If you add a <code>clip-path</code>, then only the clipped/highlighted area of the front will grow and regain
+          color. The background will go darker and blurrier to create a dramatic effect</p>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 section-card" id="section-3">
+        <div class="img-container">
+          <img src="https://images.pexels.com/photos/712521/pexels-photo-712521.jpeg" id="test-img" alt="" />
+        </div>
+        <h3>Change the effects</h3>
+        <p>By specifying the initial and hover values for the animation (based on CSS filters and transformations), you
+          can create different effects for each image. You can use: blur, brightness, grayscale, or sepia.</p>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 section-card" id="section-4">
+        <div class="img-container">
+          <img src="https://images.pexels.com/photos/712521/pexels-photo-712521.jpeg" id="test-img" alt="" />
+        </div>
+        <h3>Responsive</h3>
+        <p>If the <code>clip-path</code> value is in percentages, it will behave in a responsive way. You can see an
+          example by resizing this window (Bootstrap was used as a base for the demo, but it is not needed for the code
+          to run.)</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+<script lang="javascript" src="babel.js"></script>

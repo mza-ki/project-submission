@@ -1,0 +1,101 @@
+.img-container {
+  width: 100%;
+  height: 0;
+  padding-top: 66.66%;
+  position: relative;
+  overflow: hidden;
+}
+
+.img-container img {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+
+.section-card { 
+  /*border: 4px solid transparent;*/ 
+  padding-top: 15px; 
+  transition: all 0.5s;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.section-card:hover {
+  /*border: 4px solid #beeeef;*/
+  background: #f8f8f8;
+}
+
+.section-card h3 {
+  margin-top: 0.5em;
+}
+
+
+/** DREFF STYLES **/
+.dreff-holder {
+  position: relative;
+  overflow: hidden;
+}
+
+.dreff-holder .dreff-img {
+  --blur: 0;
+  --brightness: 1;
+  --grayscale: 0;
+  --scale: 1;
+  --sepia: 0.5;
+  --front-blur: 0;
+  --front-brightness: 1;
+  --front-grayscale: 0;
+  --front-scale: 1;
+  --front-sepia: 0.5;
+  --duration: 0.5s;
+  --hover-blur: 3px;
+  --hover-brightness: 0.6;
+  --hover-grayscale: 1;
+  --hover-scale: 1;
+  --hover-sepia: 0;
+  --hover-duration: 2s;
+  --hover-front-blur: 0;
+  --hover-front-brightness: 1;
+  --hover-front-grayscale: 0;
+  --hover-front-scale: 1.15;
+  --hover-front-sepia: 0;
+  --hover-front-duration: 3s;
+  --hover-front-clippath: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(var(--scale));
+  -webkit-transform: translate(-50%, -50%) scale(var(--scale));
+  filter: blur(var(--blur)) brightness(var(--brightness)) grayscale(var(--grayscale)) sepia(var(--sepia));
+  -webkit-filter: blur(var(--blur)) brightness(var(--brightness)) grayscale(var(--grayscale)) sepia(var(--sepia));
+  transition: var(--duration);
+  -webkit-transition: var(--duration);
+}
+
+.dreff-holder .dreff-front {
+  transform: translate(-50%, -50%) scale(var(--front-scale));
+  -webkit-transform: translate(-50%, -50%) scale(var(--front-scale));
+  filter: blur(var(--front-blur)) brightness(var(--front-brightness)) grayscale(var(--front-grayscale)) sepia(var(--front-sepia));
+  -webkit-filter: blur(var(--front-blur)) brightness(var(--front-brightness)) grayscale(var(--front-grayscale)) sepia(var(--front-sepia));
+  clip-path: var(--hover-front-clippath);
+  -webkit-clip-path: var(--hover-front-clippath);
+}
+
+.dreff-holder:hover .dreff-back {
+  filter: blur(var(--hover-blur)) brightness(var(--hover-brightness)) grayscale(var(--hover-grayscale)) sepia(var(--hover-sepia));
+  -webkit-filter: blur(var(--hover-blur)) brightness(var(--hover-brightness)) grayscale(var(--hover-grayscale)) sepia(var(--hover-sepia));
+  transform: translate(-50%, -50%) scale(var(--hover-scale));
+  -webkit-transform: translate(-50%, -50%) scale(var(--hover-scale));
+  transition: all var(--hover-duration);
+}
+
+.dreff-holder:hover .dreff-front {
+  filter: blur(var(--hover-front-blur)) brightness(var(--hover-front-brightness)) grayscale(var(--hover-front-grayscale)) sepia(var(--hover-front-sepia));
+  -webkit-filter: blur(var(--hover-front-blur)) brightness(var(--hover-front-brightness)) grayscale(var(--hover-front-grayscale)) sepia(var(--hover-front-sepia));
+  transform: translate(-50%, -50%) scale(var(--hover-front-scale));
+  -webkit-transform: translate(-50%, -50%) scale(var(--hover-front-scale));
+  transition: all var(--hover-front-duration);
+}
